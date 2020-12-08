@@ -1,0 +1,542 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #111224;
+  font-family: sans-serif;
+}
+
+.white-text {
+  color: antiquewhite;    
+}
+
+.yellow-text {
+  color: #e7d90e;    
+}
+
+.blue-text {
+  color: #111224;
+}
+
+.action-button {
+  display: inline-block;
+  background-color: #e7d90e;
+  color: #111224;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.hiden {
+  display: none;  
+}
+  
+header {
+  z-index: 999;
+}
+
+.logo-container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-left {
+  padding-left: 20px;
+}
+
+.logo-right {
+  padding-right: 20px;
+}
+
+.list-item {
+  list-style: none;
+  border: solid 1px antiquewhite;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.name-and-info {
+  height: 65%;
+  text-align: center;
+}
+
+.tag-secundary {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.tag-primary {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.picture {
+  flex-wrap: wrap;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-menu-item {
+  text-decoration: none;
+}
+
+.main-menu-item:hover {
+  color: #e7d90e;
+}
+
+.picture li{
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.social-icon:hover {
+  color: #e7d90e;
+}
+
+.about-me {
+  margin: 40px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list-services-container {
+  width: 80%;
+}
+
+.list-services {
+  list-style-type: none;
+}
+
+.service-description-card {
+  height: 60vw;
+  background-color: #1f2036;
+  border: solid 5px #3a3b46;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.service-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.web-development-image {
+  background-color: #3a3b46;
+  background-image: url(../imagenes/services/web-development.png);
+  background-size: cover;
+}
+
+.frontend-image {
+  background-color: #3a3b46;
+  background-image: url(../imagenes/services/front-end.png);
+  background-size: cover;
+}
+
+.backend-image {
+  background-color: #3a3b46;
+  background-image: url(../imagenes/services/back-end.png);
+  background-size: cover;
+}
+
+.seo-and-digital-marketing-image {
+  background-color: #3a3b46;
+  background-image: url(../imagenes/services/seo-digital-marketing.png);
+  background-size: cover;
+}
+
+.android-development-image {
+  background-color: #3a3b46; 
+  background-image: url(../imagenes/services/android-development.png);
+  background-size: cover;
+}
+
+.ui-ux-design-image {
+  background-color: #3a3b46;
+  background-image: url(../imagenes/services/ui-ux-design.png);
+  background-size: cover;
+}
+
+.service-description-card p {
+  background-color: #1f2036;
+  text-align: center;
+}
+
+.service-text {
+  margin-top: 20px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+}
+
+.portfolio {
+  width: 80%;
+  margin: auto;
+}
+
+.proyect-card {
+  width: 90%;
+  height: 50vw;
+  border: solid 5px #3a3b46;
+  border-radius: 5px;
+  margin: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.proyect-info {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 1s;
+}
+
+.proyect-card:hover .proyect-info {
+  top: 0;
+}
+
+.proyect-info p {
+  background: transparent;
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+.proyect-1 {
+  background-image: url(../imagenes/proyects/turismo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.proyect-2 {
+  background-image: url(../imagenes/proyects/doctores.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.proyect-3 {
+  background-image: url(../imagenes/proyects/guayaberas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.proyect-4 {
+  background-image: url(../imagenes/proyects/montañas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.proyect-5 {
+  background-image: url(../imagenes/proyects/talleres.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.proyect-6 {
+  background-image: url(../imagenes/proyects/seguridad.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.list-proyects {
+  list-style-type: none;
+}
+
+.skills {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.list-tools {
+  width: 80%;
+  margin: auto;
+  columns: 2;
+}
+
+.tool-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tool-item {
+  list-style-type: none;
+}
+
+.name-tool {
+  display: inline-block;
+  margin: 6px;
+}
+
+.title-portfolio {
+  margin: 20px;
+  text-align: center;
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-info {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-element {
+  list-style-type: none;
+}
+
+.contact-info-container {
+  display: flex;
+  align-content: center;
+  margin: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-detail-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 20vh;
+}
+
+.footer-line {
+  background-color: #e7d90e;
+  height: 1px;
+  border: 0;
+  margin: 10px;
+}
+
+.footer-container {
+  height: 80%;
+  background-color: 111224;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-height: 500px) {
+  
+  .social-icons-container, .title-tag{
+    display: none;
+  }
+    
+}
+  
+@media(min-width: 576px) {
+
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+    
+ .name-and-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+     
+  .picture {
+    background-color: #3a3b46;
+    background-image: url(../imagenes/profile-picture.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .social-icons-container {
+    width: 90%;
+    background: transparent;
+    padding-bottom: 20px;
+  }
+
+  .social-icons-list {
+    border-radius: 50px;
+    border: solid 4px #3a3b46;
+  }
+  
+  .list-services, .list-proyects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-description-card {
+    height: 90%;
+  }
+
+  .proyect-card {
+    height: 40vh;
+  }
+
+  .tag-secundary {
+    font-size: 3rem;
+  }
+    
+  .tag-primary {
+    font-size: 5rem;
+  }
+    
+  .col-sm-6 {
+    width: 50%;
+  }
+    
+}
+  
+@media(min-width: 768px) {
+
+  header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+  }
+    
+  .logo-container {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+      
+  .links-container {
+    width: 80%;
+  }
+      
+  .nav-bar-container {
+    width: 75%;
+  }
+      
+  .nav-bar-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-item {
+    list-style: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+  }
+
+  .list-item a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  .list-item a:hover {
+    color: #e7d90e;
+    text-decoration: none;
+  }
+
+  .sandwich {
+    display: none;
+  }
+
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-tools {
+    columns: 3;
+  }
+
+  .tool-image-png {
+    width: 300px;
+    height: 300px;
+  }
+    
+  .col-md-4 {
+    width: 33.33%;
+  }    
+  
+}
+  
+@media(min-width: 992px) {
+    
+  .tool-image {
+    display: inline;
+  }
+
+  .tool-image img {
+    height: 25px;
+    width: 25px;
+  }
+ 
+}

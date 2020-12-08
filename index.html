@@ -3,51 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./javascript/javascript.js"></script>
     <title>Marcos Narváez</title>
 </head>
 <body>
-    <div class=nav-bar>
-        <div class="logo-container">
-          <div class="logo"></div>
-        </div>
-        <div class="links-container">
-          <ul list-links>
-            <li class="list-item">Home</li>
-            <li class="list-item">About</li>
-            <li class="list-item">Resume</li>
-            <li class="list-item">Portfolio</li>
-            <li class="list-item">Blog</li>
-            <li class="list-item">Contact</li>
-            <li class="list-item">|</li>
-            <li class="list-item">
-              <div class="phone-container">
-                <div class="phone-icon"></div>
-                <p>999 992 22 21</p>
-              </div>
-            </li>
-            </ul>
-        </div>
+
+<!--============================================= header =============================================-->
+
+  <header>
+    <div class="logo-container white-text">
+      <i class="fa fa-camera-retro logo-left"></i>
+      <a onclick="showMenu()" href="#"><i class="fa fa-align-justify logo-right sandwich main-menu-item white-text"></i></a>
+    </div>
+    <div class="nav-bar-container">
+        <ul id="menu" class="nav-bar-list hiden">
+          <li class="list-item"><a href="#home_section" class="main-menu-item white-text">Home</a></li>
+          <li class="list-item"><a href="#about_section" class="main-menu-item white-text">About</a></li>
+          <li class="list-item"><a href="#services_section" class="main-menu-item white-text">Services</a></li>
+          <li class="list-item"><a href="#portfolio_section" class="main-menu-item white-text">Portfolio</a></li>
+          <li class="list-item"><a href="#contact_section" class="main-menu-item white-text">Contact</a></li>
+        </ul>
+    </div>
+  </header>
+
+<!--============================================= home =============================================-->
+  
+  <section class="main">
+    <div class="name-and-info">
+      <div class="introduction-text">
+        <p id="home_section" class="tag-secundary yellow-text">Hello, I'm</p>
+        <p class="tag-primary white-text">Marcos Narváez</p>
+        <p class="title-tag tag-secundary yellow-text">Web Developer</p>
+        <a class="action-button" href="#">Hire me!</a>  
       </div>
-      
-      <!--Empieza segunda parte -->
-      <div class="main">
-        <div class="name-and-info">
-          <div class="presentation">
-              <div class="hello-tag">
-                <p>Hello, I'm</p>
-              </div>
-              <div class="name-tag">
-                <p>Marcos Narváez</p>
-              </div>
-              <div class="title-tag">
-                <p>Desarrollador web</p>
-              </div> 
-              <a class="hire-me-button" href="#">Hire me!</a>
+    </div>
+    <div class="picture">
+      <div class="social-icons-container white-text">
+        <ul class="social-icons-list">
+          <li><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook-f fa-2x social-icon white-text"></i></a></li>
+          <li><a href="https://twitter.com/home" target="_blank" title="twitter"><i class="fab fa-twitter fa-2x social-icon white-text"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram fa-2x social-icon white-text"></i></a></li>
+          <li><a href="https://www.linkedin.com/feed/" target="_blank" title="linkedin"><i class="fab fa-linkedin-in fa-2x social-icon white-text"></i></a></li>
+          <li><a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github fa-2x social-icon white-text"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!--============================================= about me =============================================-->
+
+  <section class="about-me">
+    <div><p id="about_section" class="tag-secundary yellow-text">About Me</p></div>
+    <div class="description">
+      <div><p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda provident tempore aut ab quam. Iste culpa accusantium voluptates quas nesciunt pariatur, beatae, modi, quae veritatis voluptas consectetur quam rerum architecto?</p></div>
+      <div><a class="action-button" href="#">Download resume</a></div>
+    </div>
+  </section>
+
+<!--============================================= services =============================================-->
+
+  <section class="services">
+    <div class="tag-secundary yellow-text title">
+      <p id="services_section">Services</p>
+    </div>
+    <div class="list-services-container white-text">
+      <ul class="list-services">
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image web-development-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">Web development</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
           </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image ui-ux-design-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">UI/UX desing</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image frontend-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">Frontend</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image backend-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">Backend</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image seo-and-digital-marketing-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">SEO & digital marketing</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="service-description-card">
+            <div class="service-image android-development-image">
+            </div>
+            <div class="service-text">
+              <p class="service-title">Android development</p>
+              <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, cum quibusdam voluptas est maxime nobis itaque veritat.</p>  
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!--=============================================== tools ===============================================-->
+
+  <section class="tools">
+    <div class="title tag-secundary yellow-text">
+      <p id="tools-section">Tools I use</p>
+    </div>
+    <ul class="list-tools white-text">
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">HTML & CSS</p>
         </div>
-        <div class="picture">
-          <div class="social-icons-container"></div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">JavaScript</p>
         </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Python</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Node.js</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Java</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Kotlin</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Git</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Visual Studio code</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Android Studio</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Google ads</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Illustrator</p>
+        </div>
+      </li>
+      <li class="tool-item">
+        <div class="tool-card">
+          <p class="name-tool">Microsoft Office</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<!--============================================== portfolio ==============================================-->
+
+  <section class="portfolio">
+    <div class="title-portfolio">
+      <p id="portfolio_section" class="tag-secundary yellow-text">My portfolio</p>
+      <p class="color-description white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolore non molestiae amet, itaque voluptatem? Natus, maiores ipsum! Atque ipsum accusantium, aspernatur laborum magni tempore tempora ratione placeat odio perspiciatis.</p>
+    </div>
+    <div>
+      <ul class="list-proyects">
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-1 proyect-card">
+            <div class="proyect-info">
+              <p>turismo.com</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-2 proyect-card">
+            <div class="proyect-info">
+              <p>doctores.com.mx</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-3 proyect-card">
+            <div class="proyect-info">
+              <p>tekit.com.mx</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-4 proyect-card">
+            <div class="proyect-info">
+              <p>turismo.com</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-5 proyect-card">
+            <div class="proyect-info">
+              <p>turismo.com</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-sm-6 col-md-4">
+          <div class="proyect-6 proyect-card">
+            <div class="proyect-info">
+              <p>turismo.com</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!--=============================================== contact ===============================================-->
+
+  <section class=contact>
+      <div class="contact-info">
+        <p id="contact_section" class="contact-title title tag-secundary yellow-text">Contact</p>
+        <p class="color-description white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor alias impedit repudiandae aspernatur ad sequi, ex similique, iste soluta ea iure consequuntur explicabo officiis blanditiis laudantium in? Quia, dolorem.</p>  
       </div>
+      <ul class="contact-list white-text">
+        <li class="contact-element">
+          <div class="contact-info-container">
+            <div class="icon">
+              <i class="fa fa-phone fa-2x"></i>
+            </div>
+            <div class="contact-detail-info">
+              <p>+52 999 992 22 21</p>
+            </div>
+          </div>
+        </li>
+        <li class="contact-element">
+          <div class="contact-info-container">
+            <div class="icon">
+              <i class="fa fa-envelope fa-2x"></i>
+            </div>
+            <div class="contact-detail-info">
+              <p>contact@marcosnarvaez.com</p>
+            </div>
+          </div>
+        </li>
+        <li class="contact-element">
+          <div class="contact-info-container">
+            <div class="icon">
+              <i class="fa fa-map fa-2x"></i>
+            </div>
+            <div class="contact-detail-info">
+              <p>18th by 23th and 25th <br>Mérida, México</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+<!--=============================================== footer ===============================================-->
+
+  <footer>
+    <hr class="footer-line">
+    <div class="footer-container white-text">
+      <p>Powered by Marcos Narvaez</p>
+    </div>
+  </footer>
+
 </body>
 </html>
