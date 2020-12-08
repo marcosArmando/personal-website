@@ -363,8 +363,10 @@ footer {
 .footer-line {
   background-color: #e7d90e;
   height: 1px;
+  width: 75%;
   border: 0;
   margin: 10px;
+  margin: auto;
 }
 
 .footer-container {
@@ -382,7 +384,29 @@ footer {
   }
     
 }
-  
+
+@media(max-width: 576px) {
+
+  .social-icons-container {
+    position: fixed;
+    right: 0%;
+    top: 300px;  
+  }
+      
+  .social-icons-list {
+    display: flex;
+    flex-direction: column;
+  }
+      
+  .picture li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+
 @media(min-width: 576px) {
 
   .main {
